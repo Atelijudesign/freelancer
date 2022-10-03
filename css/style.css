@@ -31,8 +31,19 @@ body {
 }
 .navegacion-principal{
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
 }
+
+@media  (min-width: 768px) {
+    .navegacion-principal{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+
+
 .navegacion-principal a {
     color: var(--blanco);
     text-decoration: none;
@@ -44,7 +55,10 @@ body {
     background-color: var(--primario);
     color: var(--oscuro);
 }
-@media (min-width: 480px) {
-    
+
+.hero {
+    background-image: url("../img/hero.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
